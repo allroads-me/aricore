@@ -5,6 +5,17 @@
  * @package aricore
  */
 
+/*
+ * Loads the Options Panel
+ *
+ * If you're loading from a child theme use stylesheet_directory
+ * instead of template_directory
+ */
+
+define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/' );
+require_once dirname( __FILE__ ) . '/inc/options-framework.php';
+require_once get_template_directory() . '/options.php';
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
